@@ -6,10 +6,10 @@
     "instagram": "instagram"
   },
   "scripts": {
-    "build": "yarn run tslint && yarn run clean && tsc",
+    "build": "yarn run clean && tsc",
     "clean": "rm -rf ./dist",
     "tslint": "tslint --project ./tsconfig.json ./instagram/**/*.ts",
-    "test:e2e:chrome:local": "yarn run build && testcafe chrome ./instagram/**/*.spec.ts --skip-js-errors"
+    "test:e2e:chrome:local": "yarn run build && protractor ./protrator/local.config.ts"
   },
   "repository": {
     "type": "git",
@@ -22,9 +22,11 @@
   "license": "MIT",
   "homepage": "https://github.com/HackproTm/comment-social-media/#readme",
   "devDependencies": {
+    "@types/jasminewd2": "^2.0.10",
     "@types/node": "^10.12.12",
     "codelyzer": "^5.2.2",
-    "testcafe": "^1.18.3",
+    "jasmine-spec-reporter": "^7.0.0",
+    "protractor": "^7.0.0",
     "ts-node": "~7.0.1",
     "tslint": "~5.11.0",
     "typescript": "^3.1.6"

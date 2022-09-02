@@ -5,11 +5,17 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "pwa-chrome",
+      "type": "node",
       "request": "launch",
-      "name": "Launch Chrome against localhost",
-      "url": "http://localhost:8080",
-      "webRoot": "${workspaceFolder}"
+      "name": "Run Instagram",
+      "program": "${workspaceRoot}/node_modules/protractor/bin/protractor",
+      "args": ["${workspaceRoot}/dist/protractor/local.config.js"],
+      "sourceMaps": true,
+      "smartStep": true,
+      "internalConsoleOptions": "openOnSessionStart",
+      "outFiles": [
+          "${workspaceFolder}/dist/**/*.js"
+      ]
     }
   ]
 }
