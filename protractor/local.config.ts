@@ -7,7 +7,7 @@ export const config: Config = {
   SELENIUM_PROMISE_MANAGER: false,
   getPageTimeout: 50000,
   capabilities: {
-    browserName: 'chrome',
+    browserName: 'firefox',
     chromeOptions: {
       args: ['--disable-gpu']
     }

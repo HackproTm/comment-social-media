@@ -24,7 +24,7 @@
   "devDependencies": {
     "@types/jasminewd2": "^2.0.10",
     "@types/node": "^10.12.12",
-    "codelyzer": "^5.2.2",
+    "codelyzer": "^0.0.28",
     "jasmine-spec-reporter": "^7.0.0",
     "protractor": "^7.0.0",
     "ts-node": "~7.0.1",

@@ -127,7 +127,7 @@ describe('This is the first example of protractor', () => {
         'Los amigos y las buenas maneras te llevarán donde el dinero no puede'
       ]
       await browser.waitForAngularEnabled(false);
-      await browser.driver.get('https://www.instagram.com/p/CZ93nDzoNc1/');
+      await browser.driver.get('https://www.instagram.com/reel/Ch-vbOWNLYB/');
 
       const min = Math.ceil(0);
       const max = Math.floor(frases.length);
